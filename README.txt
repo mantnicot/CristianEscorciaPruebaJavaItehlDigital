@@ -44,7 +44,8 @@ Se uso react para ejecutar el programa , como aprte del front usando de ejemplo 
 Si deseas ejecutarlo descargue el archivo y ejecutelo por medio de la terminal ubicandose en la carpeta donde este instalado 
 y ejecute el siguiente comando
 
-
+npm install 
+y despues
 npm start 
 
 
