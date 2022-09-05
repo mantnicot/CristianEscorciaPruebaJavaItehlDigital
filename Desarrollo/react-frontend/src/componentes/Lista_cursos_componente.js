@@ -25,8 +25,11 @@ const Lista_cursos_componente =() => {
       filas[i].style.display = lenguaje.toUpperCase().indexOf(valor) > -1 ? "" : "none";
     }
   }
-
-  document.getElementById("myInput").addEventListener("keyup", filtro);
+  var archivo = document.getElementById("myInput");
+  if(archivo)
+  {
+      archivo.addEventListener("keyup", filtro);
+  }
   return (
     <div className='container'>
         <h2 className='text-center'>Lista de cursos</h2>
