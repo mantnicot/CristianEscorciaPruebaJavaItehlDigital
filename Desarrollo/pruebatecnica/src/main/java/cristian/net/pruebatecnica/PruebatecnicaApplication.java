@@ -20,14 +20,12 @@ public class PruebatecnicaApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(PruebatecnicaApplication.class, args);
 	}
-	/*@Autowired*/
-	/*private Modalidadrepositorio modalidadrepositorio;*/
-	/*private Cursorepositorio cursorepositorio;*/
-	/*private Descuentorepositorio descuentorepositorio;*/
+	@Autowired
+	private Modalidadrepositorio modalidadrepositorio;
 	@Override
 	public void run(String... args) throws Exception {
 
-		/*Modalidad modalidad = new Modalidad();
+		Modalidad modalidad = new Modalidad();
 		modalidad.setNombre("Privado");
 		modalidad.setDescripcion("Es una modalidad enfocada en ambito privados");
 		modalidadrepositorio.save(modalidad);
@@ -40,7 +38,7 @@ public class PruebatecnicaApplication implements CommandLineRunner {
 		Modalidad modalidad2 = new Modalidad();
 		modalidad2.setNombre("Ondemand");
 		modalidad2.setDescripcion("Es una modalidad enfocada en la cantidad de personas que demanden el curso");
-		modalidadrepositorio.save(modalidad2);*/
+		modalidadrepositorio.save(modalidad2);
 
 	}
 }
